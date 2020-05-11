@@ -29,7 +29,9 @@ body {
 a {
    color: coral;
   text-decoration: none;
-    opacity: 1
+  opacity: 1;
+  text-transform: lowercase;
+  font-weight: bold;
 }
 
 a:hover {
