@@ -1,17 +1,20 @@
 body {
-  background-image: url('https://boechat.net/wp-content/uploads/2018/02/degrade-background-12685.jpg');
-  background-size: auto 100vh;
+  background-image: url(../img/site-bg.gif);
+  background-size: 100% 100vh;
   background-repeat: not-repeat;
+    background-attachment: fixed;
   font-family: Arial, sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 
 .menu {
-  background-color: #cecece;
+  background-color: #0d0f1266;
+   
   border-radius: 5px;
   padding: 1px;
   width: 80%;
   margin: 0 auto;
+
 }
 
 .menu li {
@@ -24,8 +27,9 @@ body {
 }
 
 a {
-  color: teal;
+   color: coral;
   text-decoration: none;
+    opacity: 1
 }
 
 a:hover {
@@ -35,17 +39,25 @@ a:hover {
 .site-title,
 .site-subtitle {
   text-align: center;
-  color: whitesmoke;
+   color: coral;
 }
 
 .site-subtitle {
   font-style: italic;
 }
 
-.imagem {
-    height: 400px;
-    width: 800px;
-    margin: 0 auto;
+.img-blur {
+    width: 50%;
+    margin: 100px auto;
+    transition: 1s ease-in-out linear;
 }
 
+.img-blur img {
+    width: 100%;
+}
+
+.img-blur img:hover {
+    transition: all 300ms ease-in-out;
+    filter: blur(5px)
+}
 
