@@ -1,0 +1,125 @@
+
+.contato {
+    color: crimson;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #dc143c36;
+    padding: 20px;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+}
+fieldset {
+    border: 0;
+    margin-bottom: 20px;
+}
+
+legend,
+.msg {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+label{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+legend,
+label[for="mensagem"] {
+    font-weight: bold;
+
+}
+
+label[for],
+button {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    
+}
+
+.assuntos ul {
+    list-style: none;
+}
+
+.assuntos li {
+    margin: 10px;
+}
+button {
+    border: 0;
+    padding: .5em 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+    background-color: crimson;
+    color: white;
+    font-size: 1.2em;
+    margin: 10px auto;
+    border-radius: 5px;
+    width: 80%;
+}
+
+button:hover {
+    background-color: white;
+    color: crimson;
+    cursor: pointer;
+}
+input:invalid {
+    box-shadow: 0 0 3px red;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #FFD;
+}
+
+button:focus {
+    background-color: #8C1D3D;
+}
+
+input[value="Outro"] + input {
+    display: none;
+}
+
+input[value="Outro"]:checked + input {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+}
+
+.vemx1 {
+   margin: 50px;
+}
+
+.mapa {
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+	form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 1000px) {
+	form {
+        width: 60%;
+        margin: 0 auto;
+    }
+}

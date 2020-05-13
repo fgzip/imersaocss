@@ -1,0 +1,77 @@
+#sobre-header {
+    height: 60vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sobre-titulos {
+    color: crimson;
+    text-align: center;
+}
+
+.sobre-title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Teko', sans-serif;
+    font-size: 7em;
+	letter-spacing: .08em;
+}
+
+.sobre-subtitle {
+    font-style: italic;
+	font-size: 2em;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.container {
+    color: crimson;
+    width: 100%;
+    background-color: #ff000015;
+}
+
+.texto {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.video {
+    display: block;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.sobre-p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.git {
+    filter: grayscale(.7);
+}
+
+.git:hover {
+    filter: grayscale(0);
+}
+
+@media (min-width: 700px) {
+	.texto {
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+	.texto {
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
