@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+
+html {
+	scroll-behavior: smooth;
+  }
 /* --- FIM DO RESET --- */
 
 
@@ -33,11 +37,12 @@ body {
 }
 
 .menu {
-	background-color: #0d0f1266;
+	background-color: #0d0f12bb;
 	padding: 20px;
 	position: fixed;
 	top: 0;
 	width: 100vw;
+	z-index: 1;
 }
 
 .menu li {
@@ -62,14 +67,52 @@ body {
 
 a:hover {
 	font-weight: bold;
+	transform: scale(1.1);
 }
 
 /* -- fim dos links -- */
 /* --- FIM DA NAVEGAÇÃO --- */
 
+.botao-home {
+	font-size: 3em;
+	color: #ffffff00;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
 
+.botao-home a {
+	background-color: crimson;
+	padding: 10px;
+	border-radius: 100px;
+	color: #0d0f12;
+}
+
+.botao-home a:active,
+.botao-home a:hover {
+	background-color: #0d0f12;
+	color: crimson;
+	text-shadow: 0 0 4px crimson;
+}
 
 /* --- TITULOS --- */
+.site-titulos {
+	transform: scale(0.2) translateY(-50vh);
+	opacity: 0;
+	animation: .5s ease .8s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+	from {
+		transform: scale(0.2) translateY(-50yh);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1) translateY(0) rotate(1080deg);
+		opacity: 1;
+	}
+}
+
 .site-title,
 .site-subtitle,
 .site-subtitle-dois {
@@ -119,6 +162,8 @@ a:hover {
 .grid figure {
 	margin: 0 auto;
 	background: #f5305766;
+
+	transition: transform .7s;
 }
 
 .grid figcaption {
@@ -131,9 +176,13 @@ a:hover {
 	height: 300px;
 	object-fit: fill;
 	object-position: 0px;
+	
   }
 
 
+.grid figure:hover {
+	transform: scale(1.5) rotate(359deg);
+}
 .footer {
 
 	margin-top: 40px;
@@ -153,14 +202,19 @@ a:hover {
 }
 .footer li {
 	display: inline-block;
+	
 }
 
-.footer img {
-	filter: grayscale(1);
+.footer li a {
+	color: crimson;
+	font-size: 2.3em;
+	transition: text-shadow .1s;
 }
 
-.footer img:hover {
-	filter: grayscale(0);
+.footer li a:hover {
+	color: #f7395f;
+	text-shadow: pink 0 0 8px;
+	
 }
 
 .div-f {
@@ -173,7 +227,8 @@ a:hover {
 
 @media (min-width: 700px) {
 	.portfolio .grid {
-		grid-template-columns: repeat(2, 40%);
+		grid-template-columns: repeat(2, 320px);
+		gap: 40px;
 		align-content: center;
     	justify-content: center;
 	}
@@ -183,9 +238,10 @@ a:hover {
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 	.portfolio .grid {
-		grid-template-columns: repeat(3, 25%);
+		gap: 50px;
+		grid-template-columns: repeat(3, 350px);
 		align-content: center;
     	justify-content: center;
 	}
