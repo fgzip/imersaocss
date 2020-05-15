@@ -2,9 +2,16 @@
 .contatx {
     color: crimson;
     width: 100%;
-    margin: 0 auto;
+    margin: 40px auto;
     background-color: #dc143c36;
     padding: 20px;
+    padding-top: 80px;
+}
+
+.contatx h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 form {

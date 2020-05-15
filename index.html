@@ -7,10 +7,12 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/esfinge.png">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>:D</title>
+	<title>Zippy :D</title>
 
 	<!-- Importa css e fontes do google -->
 	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/sobre.css">
+	<link rel="stylesheet" href="css/contato.css">
 	<link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Teko:wght@500&display=swap"
 		rel="stylesheet">
@@ -28,9 +30,10 @@
 	<header class="cabecalho" id="inicio">
 		<nav class="menu">
 			<ul>
-				<li><a href="#">Início</a></li>
-				<li><a href="sobre.html">Sobre</a></li>
-				<li><a href="contato.html">Contato</a></li>
+				<li><a href="#inicio">Início</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#portfolio">Portfólio</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
 
@@ -44,42 +47,147 @@
 	<!-- Fim do cabeçalho -->
 
 	<main>
+
+		<div class="container" id="sobre">
+            <div class="texto">
+				<h2>Sobre mim</h2>
+                <h3>Eu nasci quando era muito novo...</h3>
+			
+				<figure class="figure-sobre">
+					<img class="figure-img-sobre" src="img/img-sobre.png" alt="">
+				</figure>
+                <p class="sobre-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices tristique lacinia. Nulla dictum mi sit amet lorem hendrerit, sit amet tempor quam elementum. Etiam nunc nibh, mollis eget sapien id, accumsan fermentum nisi. Maecenas et ante et tortor congue convallis. Quisque tempor vehicula nisi sed iaculis. Curabitur posuere nulla ac mattis varius. Vivamus sit amet purus sed tellus pulvinar auctor sit amet vel orci. Nulla vel arcu at turpis tempus varius quis a diam. Quisque et diam sit amet diam tempor semper vitae eu massa. Duis eleifend sit amet nisl id gravida. Mauris suscipit ultricies lorem, non tincidunt est commodo et. Cras a lectus velit.</p>
+
+				<p class="sobre-p">Aenean eget varius neque, eu maximus lacus. Integer ut leo non odio venenatis dictum at ut est. Sed ut elit finibus, rhoncus massa sit amet, luctus felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sit amet tortor nec diam commodo aliquet. Nulla sollicitudin lacus dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer lobortis dictum interdum. Morbi facilisis, orci at convallis auctor, nibh nibh placerat ligula, at pulvinar nisl augue nec odio. Integer ut condimentum erat. Nam gravida consectetur elit et pretium. Sed molestie pulvinar arcu, sit amet dapibus diam eleifend id. Phasellus tincidunt massa sit amet urna faucibus, at facilisis ante pulvinar.</p>
+				
+				<iframe class="video clearfix" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+				<p class="sobre-p">Nulla malesuada lobortis metus, nec sagittis ex faucibus sit amet. Aenean fermentum ac turpis vel congue. Nullam vitae nulla eu enim mollis aliquam. Mauris quam quam, sodales porttitor sagittis vel, cursus quis diam. Nullam at lacus eu metus vehicula mollis ac vitae dui. Proin hendrerit sit amet felis at fermentum. Sed eget scelerisque dolor. Sed eget nisi vel quam efficitur faucibus. Sed feugiat pellentesque egestas. Aenean eu dapibus sem, id ultrices est. Nulla scelerisque odio sit amet urna maximus molestie.</p>
+				
+				<p class="sobre-p">Este site foi desenvolvido durante a <a href="https://www.alura.com/imersao-css">Imersão CSS da Alura</a> :3 </p>
+            </div>
+            
+		</div>
+
 		<!-- Sessão de portfólio -->
 
-		<section class="portfolio">
+		<section class="portfolio" id="portfolio">
 			<h2 class="subtitulo-port">Portfólio {em construção}</h2>
 			<div class="grid">
-				<figure>
-					<img class="img-portfolio" src="img/img1.jpg" alt="eCommerce">
-					<figcaption>eCommerce</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/img2.jpg" alt=">Mobile">
-					<figcaption>Mobile</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/img3.jpg" alt="Web design">
-					<figcaption>Web design</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/img4.jpg" alt="Projetos pessoais">
-					<figcaption>Projetos pessoais</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio img-hackerman" src="img/img5.jpg" alt="Projetos pessoais">
-					<figcaption>Hackeamento de orkut</figcaption>
-				</figure>
-				<figure>
-					<img class="img-portfolio" src="img/img6.jpg" alt="Projetos pessoais">
-					<figcaption>Assistência técnica</figcaption>
-				</figure>
+
+				<div class="flip-card">
+					<div class="card">
+						<figure class="card-front">
+							<img class="img-portfolio" src="img/img1.jpg" alt="eCommerce">
+							<figcaption>eCommerce</figcaption>
+						</figure>
+						<div class="card-back">
+							Girando ma oe
+						</div>
+					</div>
+				</div>
+				
+
+				<div>
+					<figure class="carpado">
+						<img class="img-portfolio" src="img/img2.jpg" alt=">Mobile">
+						<figcaption>Mobile</figcaption>
+					</figure>
+				</div>
+				
+				<div class="flip-card">
+
+					<div class="card">
+						<figure class="card-front">
+							<img class="img-portfolio" src="img/img3.jpg" alt="Web design">
+							<figcaption>Web design</figcaption>
+						</figure>
+						<div class="card-back">
+							Outra giradinha
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<figure class="carpado">
+						<img class="img-portfolio" src="img/img4.jpg" alt="Projetos pessoais">
+						<figcaption>Projetos pessoais</figcaption>
+					</figure>
+				</div>
+				
+				<div class="flip-card">
+
+					<div class="card">
+						<figure class="card-front">
+							<img class="img-portfolio img-hackerman" src="img/img5.jpg" alt="Projetos pessoais">
+							<figcaption>Hackeamento de orkut</figcaption>
+						</figure>
+						<div class="card-back">
+							Um abraço, Paulo
+						</div>
+					</div>
+				</div>
+				
+				<div>
+					<figure class="carpado">
+						<img class="img-portfolio" src="img/img6.jpg" alt="Projetos pessoais">
+						<figcaption>Assistência técnica</figcaption>
+					</figure>
+				</div>
 			</div>
 
 		</section>
 		<!-- Fim da sessão de portfólio -->
 	</main>
 
+<div class="contatx" id="contato">
+	<h2>Entre em contato (não tá funcionando ainda, use seu coração)</h2>
+        <form>
+            <fieldset>
+                <legend>Seus dados</legend>
+                <label class="com-icone" for="nome">Nome</label>
+                <input id="nome" type="text" name="nome" required  pattern="[A-Za-z ']{4,}" title="O nome precisa ter pelo menos 4 caracteres">
+                <label class="com-icone" for="email">E-mail</label>
+                <input id="email" type="email" name="email" required placeholder="seu@email.com">
+            </fieldset>
+            <fieldset class="assuntos">
+                <legend class="assunto">Assunto</legend>
+                <ul>
+                    <li>
+                        <label>
+                        <input type="radio" name="assunto" value="Blog">
+                        Blog
+                    </label>
+                </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="assunto" value="Serviço">
+                            Serviço
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="radio" name="assunto" value="Outro">
+                            Outro
+                            <input type="text" name="outro-assunto">
+                        </label>
+                    </li>
+                </ul>
+                
+                
+                
+            </fieldset>
+            <label for="mensagem" class="msg">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" cols="60" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+            <button type="submit">Enviar mensagem</button>
 
+            <h2 class="vemx1">Me encontre para um x1</h2>
+
+            
+        </form>
+
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4897.204861345797!2d37.61310994715593!3d55.75192982918482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2sKremlin%20de%20Moscovo!5e0!3m2!1spt-BR!2sbr!4v1589405884359!5m2!1spt-BR!2sbr" width="900" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+       </div>
 
 	<footer class="footer">
 		<div class="div-f">
